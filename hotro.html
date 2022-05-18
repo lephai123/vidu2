@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1260px;
+            height: auto;
+            margin: auto;   
+        }
+        header ul li{
+            float: left;
+            font-size: 20px;
+            margin-top: 30px;
+            list-style: none;
+            padding-left: 50px;
+        }
+        header a{
+            text-decoration: none;
+            color: black;
+        }
+        header ul a:hover{          
+            display: block;
+            color: rgb(245, 131, 38);
+            font-weight: bolder;
+
+        }
+        .btn{
+            width: 150px;
+            height: 30px;   
+            border: 1px solid black;
+            float: left;
+            margin-left: 40px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 30px;
+            font-size: large;
+            margin-top: 25px;           
+        }
+        nav{
+            height: 220px;
+            background-color: rgb(238, 235, 235);
+            border-radius: 10px;
+            margin-top: -10px;
+        }
+        nav li{
+            margin-top: 10px;
+        }
+        .nhap a:hover{
+            color: #ffff;
+            background-color: rgb(59, 50, 50);
+        }
+       
+       
+        footer{
+            clear: both;
+            height: 220px;
+            background-color: rgb(238, 235, 235);
+            position: relative;
+            top: 30px;           
+        }
+        footer p{
+            margin-top: -13px;
+            margin-left:30px;
+        }
+       
+    </style>
+    <script>
+       
+        function dangki(){
+            alert('Web đang cải thiện mong bạn quay lại sau!!!');
+        }
+        function dangnhap(){
+            alert('Cũng chưa hoàn thành lên không đăng nhập được!')
+        }
+        function datmua(){
+            alert('Tài khoản đã được bán. Vui lòng chọn tài khoản khác.')
+        }
+        function xemct(){
+            alert('Tài khoản đã được bán.')
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="https://www.facebook.com/lequocphai.2002"><img src="img/logosin.png" alt="logo" width="12%" style="float: left;"></a>
+        <div style="margin-left: 200px;"><ul>
+            <li>
+                <a href="banhang.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="">NẠP TIỀN</a>
+            </li>
+            <li>
+                <a href="">TIN TỨC</a>
+            </li>
+            <li>
+                <a href="">HỖ TRỢ</a>
+            </li>
+        </ul></div>
+        <div class="nhap">
+        <a href="" class="btn" onclick="dangki()">Đăng kí</a>
+        <a href="" class="btn" style="margin-left: 10px;" onclick="dangnhap()" >Đăng nhập</a>
+    </div>
+    </header>
+    <hr width="100%">
+    <marquee style="margin: 0px;"><h2><b>Shop</b> đang trong chương trình khuyến mại giảm giá <b>50%</b> khi mua account từ ngày: <b>01/05/2022 - 28/06/2022</b></h2></marquee>
+
+    <hr>
+        <form action="">
+
+        </form>
+
+
+
+    <footer>
+        <div align="center"c><h1 style="font-size:40px ;"><i>Lê Quốc Phái</i></h1>
+            <p style="font-size:30px;margin-top: -20px;"> Tự hào là shop game bịp Việt Nam</p></div>
+        <div>
+           <p>Hotline: 0375616574</p>
+           <p>Email: phailqph20664@fpt.edu.vn</p>
+           <p>Facebook: <a href="https://www.facebook.com/lequocphai.2002/"  style="text-decoration: none; color: red;">lequocphai.</a></p>
+           <p>Địa chỉ: shopaccfirefreegiare.com</p>
+        </div>
+    </footer>
+</body>
+</html>

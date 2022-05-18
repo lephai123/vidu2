@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1260px;
+            height: auto;
+            margin: auto;   
+        }
+        header ul li{
+            float: left;
+            font-size: 20px;
+            margin-top: 30px;
+            list-style: none;
+            padding-left: 50px;
+        }
+        header a{
+            text-decoration: none;
+            color: black;
+        }
+        header ul a:hover{          
+            display: block;
+            color: rgb(245, 131, 38);
+            font-weight: bolder;
+
+        }
+        .btn{
+            width: 150px;
+            height: 30px;   
+            border: 1px solid black;
+            float: left;
+            margin-left: 40px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 30px;
+            font-size: large;
+            margin-top: 25px;           
+        }
+        nav{
+            height: 220px;
+            background-color: rgb(238, 235, 235);
+            border-radius: 10px;
+            margin-top: -10px;
+        }
+        nav li{
+            margin-top: 10px;
+        }
+        .nhap a:hover{
+            color: #ffff;
+            background-color: rgb(59, 50, 50);
+        }
+       
+        article{
+            width: 305px;
+            height: 300px;
+            border: 1px  solid grey;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        /* .chitiet{
+            width: 120px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 30px;
+            font-size: large;
+            margin-top: 25px;          
+        } */
+        .btn2{
+            width: 120px;
+            height: 40px;   
+            border: 1px solid black;
+            float: left;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            font-size: large;
+            margin-top: 5px;  
+            margin-left: 10px;         
+        }
+        
+        .nhap2 a:hover{
+            background-color: #71addf;
+            color: #ffff;
+            font-weight: bold;
+            text-decoration: underline;
+            
+        }
+        .nhap2 a{
+             color: #df7171;
+        }
+        .nhap3 a{
+            color:white;
+        }
+        .btn3{
+            width: 120px;
+            height: 40px;   
+            border: 1px solid black;
+            float: left;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            margin-left: 10px; 
+            margin-top: 15px;  
+            background-color: #df7171;         
+        }
+        .nhap3 a:hover{
+            background-color: #C7DFF2;
+            color:red;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        footer{
+            clear: both;
+            height: 220px;
+            background-color: rgb(238, 235, 235);
+            position: relative;
+            top: 30px;           
+        }
+        footer p{
+            margin-top: -13px;
+            margin-left:30px;
+        }
+        .imge{
+            margin-left: 330px;
+            width: 600px;
+            height: 339px;
+        }
+        b{
+        color: red;
+        }
+        img{
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        var arr = [
+            'img/0.jpg',
+            'img/1.jpg',
+            'img/2.jpg',
+            'img/3.jpg',
+            'img/4.jpg',
+            'img/5.jpg',
+        ];
+        var i = 0;
+        function next(){
+            i++;
+            if(i >= arr.length)
+            i =0;
+            var anh = document.getElementById('anh');
+            anh.src = arr[i];      
+        }
+        setInterval('next()',1800)
+        function dangki(){
+            alert('Chưa hoàn thành!!!');
+        }
+        function dangnhap(){
+            alert('Cũng chưa hoàn thành lên không đăng nhập được!')
+        }
+        function datmua(){
+            alert('Tài khoản đã được bán. Vui lòng chọn tài khoản khác.')
+        }
+        function xemct(){
+            alert('Tài khoản đã được bán.')
+        }
+    </script>
+</head>
+<body>
+<div>
+    <header>
+        <a href="https://www.facebook.com/lequocphai.2002"><img src="img/logosin.png" alt="logo" width="12%" style="float: left;"></a>
+        <div style="margin-left: 200px;"><ul>
+            <li>
+                <a href="banhang.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="">NẠP TIỀN</a>
+            </li>
+            <li>
+                <a href="">TIN TỨC</a>
+            </li>
+            <li>
+                <a href="">HỖ TRỢ</a>
+            </li>
+        </ul></div>
+        <div class="nhap">
+        <a href="" class="btn" onclick="dangki()">Đăng kí</a>
+        <a href="" class="btn" style="margin-left: 10px;"onclick="dangnhap()">Đăng nhập</a>
+    </div>
+    </header>
+    <hr width="100%">
+    <marquee style="margin: 0px;"><h2><b>Shop</b> đang trong chương trình khuyến mại giảm giá <b>50%</b> khi mua account từ ngày: <b>01/05/2022 - 28/06/2022</b></h2></marquee>
+    
+    <img src="img/0.jpg" width="50%" class="imge" id="anh">
+    <nav>
+        <p style="padding-top: 20px; margin-left: 20px;font-size: 30px;">Nick Free Fire Giá Rẻ</p>
+        <p style="margin-top: -20px; font-size: 20px; margin-left: 20px;">Garena Free Fire là một trò chơi nhiều người chơi do 111 Dots Studio phát triển và do GARENA Độc Quyền Phát Hành Tại Việt Nam.</p>
+        <ul>
+            <li>
+                Shop Bán Nick Free Fire Giá Rẻ Nhất Việt Nam100% Nick Đúng Mật Khẩu Trắng Thông Tin
+            </li>
+            <li>
+                Chú Ý Gỡ Bỏ Tất Cả Tài Khoản Trên Ứng Dụng Facebook Sau Đó Đăng Nhập Nick Bằng Mạng 3G 4G Để Hạn Chế Bị Xác Minh Danh Tính.
+
+            </li>
+        </ul>
+    </nav>
+    
+</div>
+<div>
+    <article style="float: left;margin-left: 6px;">
+        <img src="img/hanh6.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 01</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: cuibapvh</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">300.000đ</del>
+                    <i style="color: red;">150.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="sanpham1.html" class="btn2">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="datmua1.html" class="btn3" >Đặt mua</a>
+        </div>
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh7.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 02</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: taodentl</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">400.000đ</del>
+                    <i style="color: red;">200.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh3.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 03</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: yeumedi</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">120.000đ</del>
+                    <i style="color: red;">60.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh4.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 04</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: maumebebe</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">220.000đ</del>
+                    <i style="color: red;">110.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+    </article>
+
+</div>
+<div>
+    <article style="float: left;margin-left: 6px;">
+        <img src="img/hanh2.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 05</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: yeusinhly</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">250.000đ</del>
+                    <i style="color: red;">125.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh3.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 06</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: lequocphai</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">5.000.000đ</del>
+                    <i style="color: red;">2.500.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh4.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 07</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: tieulongnu</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">900.000đ</del>
+                    <i style="color: red;">450.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="" class="btn2">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3">Đặt mua</a>
+        </div>
+
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh5.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 08</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: linhnhi</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">1000.000đ</del>
+                    <i style="color: red;">500.000đ</i>
+            </div>
+        </div>
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+    </article>
+
+</div>
+<div>
+    <article style="float: left;margin-left: 6px;">
+        <img src="img/hanh7.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 09</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: 1dapvelag</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">750.000đ</del>
+                    <i style="color: red;">375.000đ</i>
+            </div>
+        </div>
+
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh8.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 10</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: hanoixin</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">550.000đ</del>
+                    <i style="color: red;">275.000đ</i>
+            </div>
+        </div>
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh6.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 11</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: namdinhpro</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">250.000đ</del>
+                    <i style="color: red;">125.000đ</i>
+            </div>
+        </div>
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+    </article>
+    <article style="float: left; margin-left: 6px;">
+        <img src="img/hanh5.jpg" width="96%" style="margin: 5px 5px;">
+        <img src="img/sale.png" width="5%" style="position: absolute; margin-left:-75px;margin-top: -10px;">
+        <div style=" position: absolute;margin-top:-50px; margin-left: 5px;"><h3 style="background-color: yellow; width: 100px; text-align: center;">MS: 12</h3></div>
+        <div style="width: 170px; float: left;">
+            <div style="margin: 0px 10px ;"> <b style="color: #71addf;">Ingame: thomthom</b>
+                <h3 style="color: red;margin-top: 5px;">Sale: 50%</h3>
+            </div>
+            <div style="border: 1px solid blue; width: 115px; text-align: center; margin-left: 20px;border-radius: 5px; ">
+                    <del style="color: grey;">450.000đ</del>
+                    <i style="color: red;">225.000đ</i>
+            </div>
+        </div>
+        <div class="nhap2">
+            <a href="" class="btn2" onclick="xemct()">Xem chi tiết</a>
+        </div>
+
+        <div class="nhap3">
+            <a href="" class="btn3" onclick="datmua()">Đặt mua</a>
+        </div>
+
+    </article>
+</div>
+
+
+<footer>
+    <div align="center"c><h1 style="font-size:40px ;"><i>Lê Quốc Phái</i></h1>
+        <p style="font-size:30px;margin-top: -20px;"> Tự hào là shop game bịp Việt Nam</p></div>
+    <div>
+       <p>Hotline: 0375616574</p>
+       <p>Email: phailqph20664@fpt.edu.vn</p>
+       <p>Facebook: <a href="https://www.facebook.com/lequocphai.2002/"  style="text-decoration: none; color: red;">lequocphai.</a></p>
+       <p>Địa chỉ: shopaccfirefreegiare.com</p>
+    </div>
+</footer>
+</body>
+</html>
